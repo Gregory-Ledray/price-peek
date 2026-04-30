@@ -14,21 +14,12 @@ export default function App() {
   // We'll keep the design overlay to demonstrate how it looks in context.
   return (
     <div className="min-h-screen bg-[#0A0A0A] relative overflow-hidden flex justify-end">
-      {/* Mock Browser/Retailer Background (Amazon-ish) */}
-      <div className="absolute inset-0 z-0 p-8 flex gap-8 pointer-events-none opacity-10">
-        <div className="flex-1 space-y-4 max-w-4xl">
-          <div className="w-full h-[400px] bg-[#1A1A1A] rounded border border-[#262626]"></div>
-          <div className="w-2/3 h-8 bg-[#262626] rounded"></div>
-          <div className="w-1/2 h-8 bg-[#1A1A1A] rounded"></div>
-        </div>
-      </div>
-
       {/* Chrome Extension Side Panel Container */}
       <motion.aside 
         initial={{ x: 320 }}
         animate={{ x: 0 }}
         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-        className="w-[320px] h-screen bg-surface border-l border-outline-variant flex flex-col shadow-2xl relative z-[9999]"
+        className="w-screen h-screen bg-surface border-l border-outline-variant flex flex-col shadow-2xl relative z-[9999]"
       >
         <AnimatePresence mode="wait">
           {currentView === 'main' ? (
