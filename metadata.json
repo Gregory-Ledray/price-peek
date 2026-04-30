@@ -1,0 +1,6 @@
+{
+  "name": "Price Peek",
+  "description": "Chrome Extension for price comparison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Work+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-price: "Work Sans", sans-serif;
+
+  /* Elegant Dark Palette */
+  --color-surface: #0A0A0A;
+  --color-surface-container: #0D0D0D;
+  --color-surface-container-high: #1A1A1A;
+  --color-on-surface: #E0E0E0;
+  --color-on-surface-variant: #707070;
+  --color-outline-variant: #262626;
+  
+  --color-accent: #C5A059;
+  --color-accent-dark: #8E723D;
+  
+  --color-walmart: #0071CE;
+  --color-target: #CC0000;
+  --color-deal-green: #C5A059; /* Using accent for deals */
+
+  --radius-xl: 0.25rem; /* Sharper corners for modernist look */
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0A0A0A] text-on-surface font-sans antialiased;
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  height: 16px;
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+.tracking-elegant {
+  letter-spacing: 0.2em;
+}
