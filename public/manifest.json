@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Price Peek",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Finds pricing for the same products across retailers.",
   "permissions": ["sidePanel", "tabs", "activeTab"],
   "host_permissions": ["*://*.google.com/*", "https://*.amazon.com/*", "https://*.walmart.com/*", "https://*.target.com/*"],
