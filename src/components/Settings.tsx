@@ -24,7 +24,6 @@ export default function Settings({ onBack }: SettingsProps) {
             try {
                 chrome.storage.local.set(data);
                 setSettings(data);
-                console.log(data);
             } catch (error) {
                 console.error("Error setting storage in activateWhenViewingProductOnChange:", error);
             }
@@ -40,7 +39,6 @@ export default function Settings({ onBack }: SettingsProps) {
             try {
                 chrome.storage.local.set(data);
                 setSettings(data);
-                console.log(data);
             } catch (error) {
                 console.error("Error setting storage in anonymousAnalyticsOnChange:", error);
             }
