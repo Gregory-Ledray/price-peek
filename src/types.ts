@@ -45,3 +45,9 @@ export interface Product {
   aggregateRating: AggregateRating;
   offers: Offer;
 }
+
+export interface PricePeekResponse {
+    exactMatches: Product[],
+    relatedModels: Product[],
+    currentSite: Product[],
+}
